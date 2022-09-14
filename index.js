@@ -1,5 +1,7 @@
 const main = document.querySelector(".main");
 const secondPage = document.querySelector(".second-page");
+const gameState = document.querySelector(".state-of-game");
+const playAgain = document.getElementById("play-again");
 const yPlayer = document.querySelector(".you");
 const cPlayer = document.querySelector(".computer");
 const yourScore = document.querySelector("you-score");
@@ -40,9 +42,23 @@ buttons.forEach((button) => {
       yPlayer.appendChild(paper);
     }
 
-    console.log(yPlayer.innerHTML === cPlayer.innerHTML);
-    if (yPlayer.innerHTML === cPlayer.innerHTML) {
-      console.log("match is tie");
+    //console.log(yPlayer.innerHTML === cPlayer.innerHTML);
+
+    if (
+      yPlayer.innerHTML === cPlayer.innerHTML &&
+      yPlayer.innerHTML !== "" &&
+      cPlayer.innerHTML !== ""
+    ) {
+      setTimeout(() => {
+        main.style.display = "none";
+        gameState.innerHTML = "Match is Tie !";
+        secondPage.classList.add("second-page-style");
+      }, 1000);
+      console.log("match is tie", true);
     }
   });
+});
+
+playAgain.addEventListener("click", () => {
+  location.reload();
 });

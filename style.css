@@ -58,7 +58,7 @@ h1 {
 .content {
   text-align: center;
 }
-p {
+.para {
   font-size: 20px;
   font-weight: 500;
   color: white;
@@ -98,6 +98,33 @@ h2 {
 }
 .second-page {
   display: none;
+}
+.second-page-style {
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.state-of-game {
+  color: var(--cyan0);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#play-again {
+  background-color: var(--cyan2);
+  border: none;
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #f2f2f2;
+  margin-top: 20px;
+  border-radius: 2px solid var(--cyan2);
 }
 @media (min-width: 768px) {
   .main {
