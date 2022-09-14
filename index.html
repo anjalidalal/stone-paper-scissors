@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="./style.css" />
     <title>Rock, Paper, Scissors</title>
   </head>
-
   <body>
     <div class="main">
       <h1>Rock, Paper, Scissors</h1>
@@ -24,11 +23,21 @@
       <div class="footer">
         <h2>Choose one !</h2>
         <div class="button-section">
-          <button><img src="./paper.svg" alt="" /></button>
-          <button><img src="./rock.svg" alt="" /></button>
-          <button><img src="./scissors.svg" alt="" /></button>
+          <button>
+            <img src="./paper.svg" class="paper" alt="" />
+          </button>
+          <button>
+            <img src="./rock.svg" class="stone" alt="" />
+          </button>
+          <button>
+            <img src="./scissors.svg" class="scissors" alt="" />
+          </button>
         </div>
       </div>
     </div>
+    <div class="second-page">
+      <button>Play Again</button>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>

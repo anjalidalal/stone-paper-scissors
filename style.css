@@ -90,7 +90,15 @@ h2 {
   font-weight: 500;
   color: white;
 }
-
+.stone-style,
+.scissors-style,
+.paper-style {
+  margin-top: 20px;
+  width: 70px;
+}
+.second-page {
+  display: none;
+}
 @media (min-width: 768px) {
   .main {
     width: 650px;
